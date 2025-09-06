@@ -3,12 +3,12 @@ while true do
     local thekoolesthecker = skibidi:FindFirstChild("musahero20")
 
         local char = thekoolesthecker.Character
-        local humanoidia = char:FindFirstChild("Humanoid")
+        local humanoidia = char:WaitForChild("Humanoid")
 
 
-            humanoidia.MaxHealth = 100
-            humanoidia.Health = 100
+            humanoidia.MaxHealth = math.huge
+            humanoidia.Health = math.huge
         
 
-    wait(1) -- Prevents crashing, updates every second
+    wait(0.00000000000000001) -- Prevents crashing, updates every second
 end
