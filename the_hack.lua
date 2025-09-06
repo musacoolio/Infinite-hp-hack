@@ -1,16 +1,14 @@
-while true do
-    local players = game:WaitForChild("Players")
-    local user = players:FindFirstChild("musahero20")
+local gui = Instance.new("ScreenGUI")
+gui.Parent = game.StarterGui
+local text = Instance.new("Text")
+text.Parent = gui
+text.Text = "if u can see this, my script worked!>!>?!?!?!>!>>!!1111!!"
 
-    if user and user.Character then
-        local char = user.Character
-        local huma = char:FindFirstChild("Humanoid")
+local skibidi = game:WaitForChild("Players")
+local thekoolesthecker = skibidi:WaitForChild("musahero20")
 
-        if huma then
-            huma.MaxHealth = math.huge
-            huma.Health = math.huge
-        end
-    end
+local thekoolestheckerschar = thekoolesthecker.Character or thekoolesthecker.CharacterAdded:Wait()
+local humanoidia = thekoolestheckerschar:WaitForChild("Humanoid")
 
-    wait(1) -- Prevent shrine meltdown
-end
+humanoidia.MaxHealth = math.huge
+humanoidia.Health = math.huge
