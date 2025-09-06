@@ -1,6 +1,6 @@
-local gui = Instance.new("ScreenGUI")
+local gui = Instance.new("ScreenGui")
 gui.Parent = game.StarterGui
-local text = Instance.new("Text")
+local text = Instance.new("TextLabel")
 text.Parent = gui
 text.Text = "if u can see this, my script worked!>!>?!?!?!>!>>!!1111!!"
 
