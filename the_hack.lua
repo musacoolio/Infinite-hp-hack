@@ -1,9 +1,16 @@
 while true do
-local players = game:WaitForChild("Players")
-local user = players:WaitForChild("musahero20")
-local char = user.Character
-local huma = char.Humanoid
-huma.MaxHealth = math.huge
-huma.Health = math.huge
-wait(0.00000000000000001)
+    local players = game:WaitForChild("Players")
+    local user = players:FindFirstChild("musahero20")
+
+    if user and user.Character then
+        local char = user.Character
+        local huma = char:FindFirstChild("Humanoid")
+
+        if huma then
+            huma.MaxHealth = math.huge
+            huma.Health = math.huge
+        end
+    end
+
+    wait(1) -- Prevent shrine meltdown
 end
