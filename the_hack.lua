@@ -3,7 +3,7 @@ while true do
     local thekoolesthecker = skibidi:WaitForChild("musahero20")
     local thekoolestheckerschar = thekoolesthecker.Character or thekoolesthecker.CharacterAdded:Wait()
     local humanoidia = thekoolestheckerschar:WaitForChild("Humanoid")
-    humanoidia.MaxHealth = 100
-    humanoidia.Health = 100
+    humanoidia.MaxHealth = math.huge
+    humanoidia.Health = math.huge
 wait(0.00000001)
 end)
