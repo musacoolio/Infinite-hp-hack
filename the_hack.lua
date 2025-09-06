@@ -1,3 +1,4 @@
+while true:
 local skibidi = game:WaitForChild("Players")
 local thekoolesthecker = skibidi:WaitForChild("musahero20")
 
@@ -6,3 +7,4 @@ local humanoidia = thekoolestheckerschar:WaitForChild("Humanoid")
 
 humanoidia.MaxHealth = math.huge
 humanoidia.Health = math.huge
+end)
