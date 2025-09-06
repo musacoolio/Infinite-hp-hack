@@ -1,11 +1,16 @@
 while true do
-local skibidi = game:WaitForChild("Players")
-local thekoolesthecker = skibidi:WaitForChild("musahero20")
+    local skibidi = game:WaitForChild("Players")
+    local thekoolesthecker = skibidi:FindFirstChild("musahero20")
 
-local thekoolestheckerschar = thekoolesthecker.Character or thekoolesthecker.CharacterAdded:Wait()
-local humanoidia = thekoolestheckerschar:WaitForChild("Humanoid")
+    if thekoolesthecker and thekoolesthecker.Character then
+        local char = thekoolesthecker.Character
+        local humanoidia = char:FindFirstChild("Humanoid")
 
-humanoidia.MaxHealth = 10000000000000000000000000000000000000000000000000000000000000000000000000000
-humanoidia.Health = 1000000000000000000000000000000000000000
-  wait(0.1)
+        if humanoidia then
+            humanoidia.MaxHealth = 100
+            humanoidia.Health = 100
+        end
+    end
+
+    wait(1) -- Prevents crashing, updates every second
 end
