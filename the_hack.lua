@@ -7,4 +7,4 @@ end
 
 walkTree(workspace)-- ✅ This must come after the function
 
-game.workspace.lobby:Destroy()
+object.Destroy(game.workspace.lobby)
