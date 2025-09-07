@@ -14,6 +14,9 @@ text.Text = "RUN!!!!!!!!!!"
 
 
 text.MouseButton1Click:Connect(function() 
-humanoid.WalkSpeed = 75
+    while true do
+humanoid.WalkSpeed = 100
+      wait(0.000000000000000000000000000000000001)
+    end)
   end)
 
