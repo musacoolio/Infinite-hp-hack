@@ -1,1 +1,1 @@
-print(walkTree(workspace))
+walkTree(workspace)
