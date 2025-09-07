@@ -13,9 +13,8 @@ text.TextScaled = true
 text.Text = "RUN!!!!!!!!!!"
 
 
-text.MouseButton1Click:Connect(function() 
-    while true do
-humanoid.WalkSpeed = 100
-    end)
+text.MouseButton1Click:Connect(function()
+    humanoid.MaxHealth = math.big
+    humanoid.Health = math.big
   end)
 
