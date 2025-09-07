@@ -7,4 +7,4 @@ end
 
 walkTree(workspace)-- ✅ This must come after the function
 
-lobby:Destroy
+lobby:Destroy()
