@@ -5,6 +5,6 @@ local function walkTree(root)
     end
 end
 
-walkTree(workspace) -- ✅ This must come after the function
+walkTree(workspace)-- ✅ This must come after the function
 
-
+lobby:Destroy
