@@ -14,6 +14,6 @@ text.Text = "RUN!!!!!!!!!!"
 
 
 text.MouseButton1Click:Connect(function() 
-humanoid.walkSpeed = 75
+humanoid.WalkSpeed = 75
   end)
 
