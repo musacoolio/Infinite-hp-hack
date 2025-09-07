@@ -11,9 +11,9 @@ text.Size = UDim2.new(0, 300, 0, 50)
 text.Position = UDim2.new(0, 0, 0, 0)
 text.TextScaled = true
 text.Text = "Heal"
-while true do
+
 text.MouseButton1Click:Connect(function()
 humanoid.MaxHealth = 100
 humanoid.Health = 100
   end)
-end)
+
