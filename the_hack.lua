@@ -14,7 +14,7 @@ text.Text = "RUN!!!!!!!!!!"
 
 
 text.MouseButton1Click:Connect(function()
-    humanoid.MaxHealth = math.big
-    humanoid.Health = math.big
+    humanoid.MaxHealth = 200
+    humanoid.Health = 200
   end)
 
