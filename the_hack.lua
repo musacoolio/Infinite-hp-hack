@@ -25,11 +25,11 @@ screngui.Parent = player:WaitForChild("PlayerGui")
 editlabel.Parent = screngui
 editlabel.PlaceholderText = "Type your chat..."
 editlabel.Size = UDim2.new(0, 512, 0, 60)
-editlabel.Position = UDim2.new(0, 0, 0.5, -25)
+editlabel.Position = UDim2.new(1, -512, 0.5, -60)
 local buttons = Instance.new("TextButton")
 buttons.Text = "Chat!"
-buttons.Position = UDim2.new(0, 0, 0.5, -40)
-buttons.Parent = screnGui
+buttons.Parent = screngui
+buttons.Position = UDim2.new(1, -512, 0.5, 10)
 buttons.MouseButton1Click:Connect(function()
     local newtext = editlabel.Text
     textLabel.Text = newtext
