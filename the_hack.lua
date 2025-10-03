@@ -27,6 +27,7 @@ editlabel.PlaceholderText = "Type your chat..."
 editlabel.Size = UDim2.new(0, 512, 0, 60)
 editlabel.Position = UDim2.new(1, -512, 0.5, -60)
 local buttons = Instance.new("TextButton")
+buttons.Size = UDim2.new(0, 512, 0, 60)
 buttons.Text = "Chat!"
 buttons.Parent = screngui
 buttons.Position = UDim2.new(1, -512, 0.5, 10)
