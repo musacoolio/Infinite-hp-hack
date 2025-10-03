@@ -1,6 +1,8 @@
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 local head = character:WaitForChild("Head")
+local RunService = game:GetService("RunService")
+
 
 local billboardGui = Instance.new("BillboardGui")
 billboardGui.Name = "MyBillboard"
@@ -31,9 +33,14 @@ buttons.Size = UDim2.new(0, 512, 0, 60)
 buttons.Text = "Chat!"
 buttons.Parent = screngui
 buttons.Position = UDim2.new(1, -512, 0.5, 10)
-buttons.MouseButton1Click:Connect(function()
+RunService.Heartbeat:Connect(function(deltaTime)
+   buttons.MouseButton1Click:Connect(function()
     local newtext = editlabel.Text
     textLabel.Text = newtext
+
+end)
+
+
 end)
 
 
