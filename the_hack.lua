@@ -1,6 +1,4 @@
 local ChatService = require(game:GetService("ServerScriptService"):WaitForChild("ChatServiceRunner"):WaitForChild("ChatService"))
-local playerService = game:GetService("Players")
-local lcplayer = playerService.LocalPlayer
 
 ChatService.SpeakerAdded:Connect(function(speakerName)
     local speaker = ChatService:GetSpeaker(speakerName)
